@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  </head>
+  <body>
+  <a href="https://apprtc.kwikichat.com/r/testPopup" class="popup">Popup</a>
+  <script type="text/javascript">
+    $('.popup').click(function(event) {
+      event.preventDefault();
+      window.open($(this).attr("href"), "popupWindow", "width=600,height=600,scrollbars=no");
+  });
+  </script>
+  </body>
+</html>
